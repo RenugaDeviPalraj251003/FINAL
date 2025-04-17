@@ -10,7 +10,7 @@ from lime import lime_tabular
 import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 
 # Add this at the beginning of your script (after imports)
 if 'prev_language' not in st.session_state:
