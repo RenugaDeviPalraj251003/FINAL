@@ -66,8 +66,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- Initialize Translator ---
-translator = Translator()
 
 # --- Sidebar for Language Selection ---
 with st.sidebar:
