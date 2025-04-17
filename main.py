@@ -340,8 +340,9 @@ def translate_text(text, dest_lang):
     try:
         if pd.isna(text) or text == "":
             return text
-        translated = translator.translate(text, dest=dest_lang)
-        return translated.text
+        translated_text = GoogleTranslator(source='auto', target=dest_lang).translate(text)
+        return translated_text  # No .text property needed
+       
     except Exception as e:
         st.warning(f"Translation error for '{text}': {str(e)}")
         return text
